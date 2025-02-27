@@ -74,3 +74,4 @@ If you are developing a production application, we recommend using TypeScript an
 ✅ Blog App with Markdown & Authentication
 ✅ Dashboard with Charts & User Analytics
 ✅ Chat Application with WebSockets
+Add user authentication & role-based permissions.
