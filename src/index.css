@@ -41,13 +41,159 @@ background: white;
 
 
 .centered {
-  display: flex;
-  justify-content: center;  /* Centers horizontally */
-  align-items: center;  /* Centers vertically */
-  height: 100vh;  /* Makes the container take full height of the viewport */
-  text-align: center;  /* Centers text inside */
-  font-weight: 500;
-  font-size: 30px;
   color: white;
 }
 
+
+
+
+.contact-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #222;
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #00bcd4;
+}
+
+.contact-item {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.contact-item a {
+  color: #00bcd4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contact-item a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+.form-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+
+  color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: #00bcd4;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background: #333;
+  color: #fff;
+  outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #bbb;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+Form button {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background: #00bcd4;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #0097a7;
+}
+
+
+/* Container for the whole page */
+.context-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #333;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #00bcd4;  /* A bright cyan color */
+  text-align: center;
+}
+
+/* Style for the contact buttons */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form button {
+  padding: 15px 25px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #00bcd4;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 200px;
+  text-align: center;
+}
+
+.contact-form button:hover {
+  background-color: #0097a7; /* Darker cyan on hover */
+}
+
+.contact-form button:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 188, 212, 0.8);
+}

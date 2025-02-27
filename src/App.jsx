@@ -4,8 +4,11 @@ import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } 
 import Home from "./pages/Home";
 import Product from "./pages/Product";
 import About from "./pages/About";
-import Context from "./pages/Context";
+
 import RootLayout from "./layout/RootLayout";  // Correct the import to match file name
+import ContextLayout from "./layout/ContextLayout";
+import ContactInfo from "./components/ContactInfo";
+import ContactForm from "./components/ContactForm";
 
 function App() {
 
@@ -15,7 +18,10 @@ function App() {
         <Route index element={<Home />} />
         <Route path="product" element={<Product />} />
         <Route path="about" element={<About />} />
-        <Route path="context" element={<Context />} />
+        <Route path="context" element={<ContextLayout />} >
+          <Route path="info" element={<ContactInfo />} />
+          <Route path="form" element={<ContactForm />} />
+        </Route>
       </Route>
     )
   );
