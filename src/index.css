@@ -197,3 +197,17 @@ h1 {
   outline: none;
   box-shadow: 0 0 10px rgba(0, 188, 212, 0.8);
 }
+
+
+.not-found-button{
+  padding: 15px 25px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #00bcd4;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 200px;
+  text-align: center;
+}
