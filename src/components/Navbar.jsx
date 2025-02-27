@@ -13,7 +13,7 @@ const navigate = useNavigate()
         <NavLink to="/about"><li>About</li></NavLink>
         <NavLink to="/context"><li>Context</li></NavLink>
       </ul>
-      <button onClick={() => navigate('/about')}>Get Started</button>
+      <button onClick={() => navigate('/product', {replace:true})}>Get Started</button>
     </div>
   );
 };
