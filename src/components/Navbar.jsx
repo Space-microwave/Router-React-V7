@@ -1,8 +1,10 @@
 import React from "react";
-import { NavLink } from "react-router-dom";  // Import Link from react-router-dom
+import { NavLink, useNavigate } from "react-router-dom";  // Import Link from react-router-dom
 
 
 const Navbar = () => {
+
+const navigate = useNavigate()
   return (
     <div className="navbar">
       <ul>
@@ -11,7 +13,7 @@ const Navbar = () => {
         <NavLink to="/about"><li>About</li></NavLink>
         <NavLink to="/context"><li>Context</li></NavLink>
       </ul>
-      <button>Get Started</button>
+      <button onClick={() => navigate('/about')}>Get Started</button>
     </div>
   );
 };

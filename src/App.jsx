@@ -8,6 +8,7 @@ import Context from "./pages/Context";
 import RootLayout from "./layout/RootLayout";  // Correct the import to match file name
 
 function App() {
+
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<RootLayout />}>
@@ -18,7 +19,7 @@ function App() {
       </Route>
     )
   );
-
+  
   return (
     <RouterProvider router={router} />
   );
